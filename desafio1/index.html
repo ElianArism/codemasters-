@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Frontend Mentor | Article preview component</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <section class="card">
+
+      <picture class="card__header"></picture>
+
+      <div class="card__body">
+
+        <div class="card__body--info">
+          <h1 class="card__body__info--title">Magnam, praesentium.</h1>
+
+          <p class="card__body__info--text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, vitae
+            aspernatur?
+            Dolorum assumenda cumque delectus, labore aperiam?
+          </p>
+        </div>
+
+        <!-- Container -->
+        <div class="card__social">
+
+          <!-- Menu contact -->
+          <div id="popup_off" class="card__social--popup_off">
+            <img src="./images/avatar-michelle.jpg" alt="">
+
+            <div class="card__social__popup_off--contact">
+              <p>Michelle Doe</p>
+              <p class="card__social__popup_off--date">02 Jun 2021</p>
+            </div>
+          </div>
+          
+          <!-- Menu social as menu-->
+          <div id="popup_on" class="hidden card__social--popup">
+            <p>Share</p>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+          </div>
+          
+
+          <!-- Menu btn -->
+          <div class="card__social--btn">
+            
+            <!-- Menu social as tooltip -->
+            <div id="popup_on" class=" hidden btnFloat">
+              <p>Share</p>
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-pinterest"></i>
+              <div class="triangle"></div>
+            </div>
+         
+            <i id="btn" class="far fa-arrow-alt-circle-right"></i>
+          </div>
+          
+        </div>
+
+      </div>
+  </div>
+
+  </section>
+  <script src="./index.js"></script>
+</body>
+
+</html>
